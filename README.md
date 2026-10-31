@@ -10,13 +10,16 @@ Optional add-on for Geometry Dash. After you quit, it saves a readable copy of y
    ```bash
    cp -r ~/.steam/debian-installation/steamapps/compatdata/322170/pfx/drive_c/users/steamuser/AppData/Local/GeometryDash ~/GD_manual_backup
    ```
-2. Copy the files in:
+2. Download the file and unzip it.
+Download the GDKeeper.zip and unzip it, then put it inside your Geometry Dash folder.
+
+3. Copy the files in:
    ```bash
    mkdir -p ~/GDKeeper
    cp gd_wrapper.sh gd_saves.py ~/GDKeeper/
    chmod +x ~/GDKeeper/gd_wrapper.sh
    ```
-3. In Steam, set GD's Launch Options to:
+4. In Steam, set GD's Launch Options to:
    ```
    ~/GDKeeper/gd_wrapper.sh %command%
    ```
@@ -24,7 +27,7 @@ Optional add-on for Geometry Dash. After you quit, it saves a readable copy of y
    ```
    WINEDLLOVERRIDES="xinput1_4=n,b" ~/GDKeeper/gd_wrapper.sh %command%
    ```
-4. Launch the game, play, and quit. It works from the next launch on.
+5. Launch the game, play, and quit. It works from the next launch on.
 
 Your data is kept in `~/GDSaveStore/`.
 
